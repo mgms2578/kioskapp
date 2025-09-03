@@ -1,17 +1,19 @@
 {
   "expo": {
-    "name": "AI 키오스크",
-    "slug": "ai-kiosk-app",
+    "name": "kiosk-native-app",
+    "slug": "kiosk-native-app",
     "version": "1.0.0",
-    "orientation": "default",
+    "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -19,24 +21,13 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.aikioskapp.kiosk",
-      "versionCode": 1,
-      "permissions": [
-        "INTERNET",
-        "CAMERA",
-        "RECORD_AUDIO",
-        "WAKE_LOCK",
-        "SYSTEM_ALERT_WINDOW"
-      ],
-      "edgeToEdgeEnabled": true
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-screen-orientation",
-      "expo-keep-awake"
+      "expo-screen-orientation"
     ]
   }
 }
