@@ -1,0 +1,24 @@
+# APK 빌드 명령어 (터미널에서 순서대로 실행)
+
+# 1. 디렉토리 이동
+cd kiosk-native-app
+
+# 2. Expo 로그인 (mgms 계정)
+npx expo login
+
+# 3. 로그인 확인
+npx expo whoami
+
+# 4. EAS CLI 설치 (필요시)
+npm install -g @expo/eas-cli
+
+# 5. EAS 로그인 확인
+npx eas whoami
+
+# 6. APK 빌드 시작 (미리보기 버전)
+npx eas build --platform android --profile preview
+
+# 또는 프로덕션 버전
+npx eas build --platform android --profile production
+
+# 빌드 완료 후 APK 다운로드 링크가 제공됩니다.
